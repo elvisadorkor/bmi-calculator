@@ -6,32 +6,38 @@
         <title>PARTAYY</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     </head>
-    <body>
-        <script src="script.js" async defer></script>
-        <section id="banner">
-            <nav id="top_nav">
-            <h1>PARTAYY</h1>
-                <ul>
-                    <li><a href="#sign_out">Sign Out</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <section id="options">
-            <div class="option">
-                <h1>ADD NEW EVENT</h1>
-                <p>Hosting a party soon? The party monsters are ready! Create a new event here!</p>
-            </div>
-            <div class="option">
-                <h1>VIEW UPCOMING EVENTS</h1>
-                <p>Want to have some fun tonight? Check out all events happening soon and book your spot!</p>
-            </div>
-        </section>
-
-        <footer>
-                <p>Did you successfully RSVP for or add a party? Let me know by giving me some feedback!</p>          
-        </footer>
-    </body>
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">PARTAYY</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="text-light" href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </nav>
+   <div class="row">
+    <div class="col-sm-6">
+      <div class="card border-primary mb-3 mt-5">
+        <div class="card-body text-primary">
+          <h5 class="card-title">NEW EVENT</h5>
+            <p class="card-text">Organizing a party soon? </p>
+            <a href="#" class="btn btn-primary">Add New Event</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+    <div class="card border-primary mb-3 mt-5">
+      <div class="card-body text-primary">
+        <h5 class="card-title">VIEW EVENTS</h5>
+        <p class="card-text">Looking to have some fun?</p>
+        <a href="#" class="btn btn-primary">View Upcoming Events</a>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
 </html>

@@ -6,28 +6,44 @@
         <title>PARTAYY</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     </head>
-    <body>
-        <script src="script.js" async defer></script>
-        <section id="banner">
-            <nav id="top_nav">
-            <h1>PARTAYY</h1>
-                <ul>
-                    <li><a href="#sign_out">Sign Out</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section id="add_event">
-            <h1>
-                EVENT DETAILS
-            </h1>
-        </section>
-        
-        
-        <footer>
-            <p>Did you successfully RSVP for or add a party? Let me know by giving me some feedback!</p>          
-        </footer>
-    </body>
-
-<html>
+  <body>
+  <nav class="navbar navbar-dark bg-primary">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">PARTAYY</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="text-light" href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </nav>
+  <form class="mt-5 ml-5">
+      <div class="form-group col-7">
+    <label for="organizingGroup">Organizing Group Name</label>
+    <input class="form-control" id="organizingGroup" type="text">
+  </div>
+  <div class="form-group col-7">
+    <label for="eventName">Event Name</label>
+    <input class="form-control" id="eventName" type="text">
+  </div>
+      <div class="form-group col-7">
+    <label for="eventLocation">Event Location</label>
+    <input class="form-control" id="eventLocation" type="text">
+  </div>
+   </div>
+      <div class="form-group col-7">
+    <label for="eventTime">Event Time</label>
+    <input class="form-control" id="eventTime" type="text">
+          <small id="helpText" class="form-text text-muted">
+  Eastern Standard/Daylight Time. Example format is 8:00
+</small>
+  </div>
+  <div class="form-group col-7">
+    <label for="additionalInfo">Additional Information</label>
+    <textarea class="form-control" id="additionalInfo" rows="3"></textarea>
+  </div>
+</form>
+   </body>
+</html>
